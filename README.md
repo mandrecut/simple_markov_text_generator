@@ -10,14 +10,13 @@ Markov chain Python class:
 
 The `order` parameter corresponds to the Markov chain order `(>=1)`. 
 
-
 Methods:
 
 - `learn(txt)` creates a model given a string `txt`.
 
 - `generate(length, seed)` generates a random text starting from `seed`, with a minimum `length`, until the last sentence ends in `".?!"`, 
 
-The `seed` is a list of words with the length `order`. 
+The `seed` is a list of words with the length `order`, for example: ["Sherlock","Holmes"]. 
 If the `seed` is not in the model then it is randomly set.
 
 ## Basic usage
