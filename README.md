@@ -1,6 +1,6 @@
 # Markov text generator
 
-Fast Markov chain text generator using `cache`.
+Simple and fast Markov chain text generator using `cache`.
 
 Main usage: building Markov models from text files, and generating random text. 
 
