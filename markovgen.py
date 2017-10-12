@@ -8,6 +8,7 @@ class Markov(object):
         self.order = order
 	
     def learn(self, txt):
+        txt = txt+txt[0:self.order]
         words = re.findall(r"[\w']+|[.,!?;:]", txt)
         for n in range(len(words)-self.order):
             key = tuple(words[n:n+self.order])
